@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4">MD. JUBAYER ISLAM</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Get In touch</h3>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Building intelligent systems and solving real-world problems through innovative technology solutions.
             </p>
