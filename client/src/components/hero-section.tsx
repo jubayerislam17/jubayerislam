@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown, Download } from "lucide-react";
 import { useTypingAnimation } from "@/hooks/use-typing-animation";
-import meImage from '../attached_assets/me.jpg'; 
+import meImage from '@assets/me.jpeg'; 
 
 const typingTexts = [
   "CSE Graduate & Researcher",
