@@ -1,0 +1,120 @@
+Overview:
+Create a modern, minimalist portfolio website for MD. JUBAYER ISLAM, a Computer Science graduate, Computer Vision researcher, and NLP enthusiast. The site should emphasize his expertise in software development, machine learning, and academic research, while showcasing selected projects and services.
+
+The design must include a clean and spacious layout with clear typography, dark mode support, subtle animations, and smooth transitions. The site should reflect a tech-focused and professional personal brand with a touch of personality through custom icons or illustrations. It must be fully responsive and mobile-friendly.
+
+Profile Picture:
+A clean, professional headshot of MD. JUBAYER ISLAM to be displayed on the homepage and about section.
+
+Website Structure & Content Details:
+1. Home
+Brief introduction:
+"Hi, I'm MD. JUBAYER ISLAM — a CSE graduate, CV researcher, and NLP enthusiast. I specialize in building intelligent systems, solving real-world problems, and conducting AI-driven healthcare research."
+
+Highlight key roles: App Developer, Machine Learning Practitioner, Problem Solver.
+
+Call-to-Action buttons:
+
+"View My Work" (scroll to Portfolio)
+
+"Get in Touch" (scroll to Contact)
+
+2. About
+Bio content:
+"CSE Graduate, Computer Vision Researcher, and NLP Enthusiast with strong foundations in software development, machine learning, and deep learning. Passionate about building intelligent systems, solving real-world problems, and contributing to research in AI-driven healthcare solutions."
+
+Education:
+
+B.Sc (Engg.) in Computer Science and Engineering
+
+Islamic University of Technology (2019 – 2024)
+
+CGPA: 3.48/4.00
+
+Work Experience:
+
+App Developer Intern (May 2023 – June 2023)
+Battery Low Interactive Limited
+
+Developed a prayer-time app for Android using RESTful APIs.
+
+Designed adaptive UI with Flutter and integrated shared preferences for user stats.
+
+Research in Computer Vision (May 2023 – June 2023)
+
+Proposed a model to classify Alzheimer’s Disease from 3D MRI images, enhancing diagnostic accuracy and understanding of disease progression.
+
+3. Skills
+Present skills in an interactive grid or tag-cloud style categorized as:
+
+Programming Languages: C, C++, Java, Python, JavaScript, TypeScript, Bash, x64 Assembly, LaTeX, HTML, CSS, SQL, Dart, R, YAML, JSON
+
+Frameworks & Libraries: ReactJS, Next.js, Node.js, Express.js, Flutter, JavaFX, STL, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, TensorFlow, Keras, OpenCV, NLTK, Hugging Face Transformers, Flask, FastAPI
+
+Databases: Oracle, MySQL, PostgreSQL, SQLite, MongoDB, Firebase, Redis, Google BigQuery
+
+DevOps & Tools: Git, GitHub, Docker, Jira, Postman, Linux, VS Code, Android Studio, Heroku, Netlify, Vercel
+
+Concepts & Methodologies: OOP, Functional Programming, SOLID Principles, SDLC, Agile, Scrum, Unit Testing, CI/CD, MVC, REST API, Microservices
+
+Problem Solving: 150+ solved problems on various online judges.
+
+4. Services
+List offered services as icon-based cards:
+
+Mobile App Development (Flutter)
+
+Web Development (ReactJS, Next.js, Node.js)
+
+Machine Learning & Deep Learning Solutions
+
+Computer Vision & NLP Research
+
+RESTful API Development
+
+5. Portfolio (Projects)
+Showcase projects in a scrollable gallery or card format with GitHub links:
+
+Alzheimer’s Disease Classification (Python, PyTorch)
+Classification of Alzheimer’s Disease from 3D MRI scans.
+
+Vegetable Classification and Quality Assessment (Python, PyTorch)
+Quality assessment using the VegNet dataset.
+(GitHub Link)
+
+Abaash (JavaScript, NodeJS, HTML, CSS)
+Flat search and rental web app for IUT students and owners.
+(GitHub Link)
+
+AQSA (Flutter, REST API)
+Location-based prayer-time app for Android.
+(GitHub Link)
+
+6. Contact
+Display in an easy-to-read, visually distinct section:
+
+Phone: +880 1829977462
+
+Email: jubayer.islam.0182@gmail.com
+
+GitHub: github.com/jubayerislam17
+
+Include a simple contact form (Name, Email, Message) with validation.
+
+Design & Aesthetic Guidelines:
+Minimalist layout with generous use of whitespace.
+
+Emphasis on clean typography (e.g., sans-serif fonts).
+
+Dark mode option with high-contrast elements for readability.
+
+Smooth, subtle animations and hover effects for buttons, links, and cards.
+
+Use custom icons/illustrations for Services and Skills sections.
+
+Must be fully responsive for desktop, tablet, and mobile devices.
+
+Fast loading time, optimized for performance.
+
+Tech-oriented, modern, professional appearance without visual clutter.
+
