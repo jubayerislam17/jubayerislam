@@ -25,9 +25,24 @@ export function HeroSection() {
   return (
     <section 
       id="home" 
-      className="pt-16 min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/50"
+      className="pt-16 min-h-screen flex items-center justify-center relative overflow-hidden"
+      style={{
+        background: `
+          radial-gradient(ellipse 80% 50% at 50% -20%, rgba(56, 189, 248, 0.15) 0%, transparent 60%),
+          radial-gradient(ellipse 60% 40% at 80% 0%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+          radial-gradient(ellipse 60% 40% at 20% 100%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+          linear-gradient(135deg, hsl(222, 47%, 11%) 0%, hsl(220, 38%, 16%) 25%, hsl(218, 34%, 16%) 50%, hsl(217, 33%, 14%) 75%, hsl(222, 47%, 11%) 100%)
+        `
+      }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/3 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-blue-400/8 rounded-full animate-pulse delay-500"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="text-center fade-in">
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
@@ -41,15 +56,15 @@ export function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
             Hi, I'm <span className="text-primary">MD. JUBAYER ISLAM</span>
           </h1>
 
-          <div className="text-xl md:text-2xl lg:text-3xl font-light mb-8 text-muted-foreground min-h-[80px] flex items-center justify-center">
+          <div className="text-xl md:text-2xl lg:text-3xl font-light mb-8 text-gray-300 min-h-[80px] flex items-center justify-center">
             <span className="typing">{typingText}</span>
           </div>
 
-          <p className="text-lg md:text-xl max-w-4xl mx-auto mb-12 text-muted-foreground leading-relaxed">
+          <p className="text-lg md:text-xl max-w-4xl mx-auto mb-12 text-gray-400 leading-relaxed">
             CSE graduate, CV researcher, and NLP enthusiast. I specialize in building intelligent systems,
             solving real-world problems, and conducting AI-driven healthcare research.
           </p>
@@ -90,7 +105,7 @@ export function HeroSection() {
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown className="h-6 w-6 text-muted-foreground" />
+            <ChevronDown className="h-6 w-6 text-gray-400" />
           </div>
         </div>
       </div>

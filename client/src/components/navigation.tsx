@@ -49,16 +49,16 @@ export function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border transition-all duration-300">
+    <nav className="fixed top-0 w-full bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-800 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection("#home")}
-              className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+              className="text-xl font-bold text-white hover:text-primary transition-colors"
             >
-              JUBAYER
+              MD. JUBAYER ISLAM
             </button>
           </div>
 
@@ -72,7 +72,7 @@ export function Navigation() {
                   className={`px-3 py-2 text-sm font-medium transition-colors ${
                     activeSection === item.href.substring(1)
                       ? "text-primary"
-                      : "text-muted-foreground hover:text-primary"
+                      : "text-gray-300 hover:text-primary"
                   }`}
                 >
                   {item.label}
