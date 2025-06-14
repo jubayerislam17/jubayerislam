@@ -45,7 +45,7 @@ const services = [
   },
   {
     id: "ai-research",
-    title: "AI Research & Consulting",
+    title: "AI Research",
     description: "Research and development in AI-driven healthcare solutions, with focus on medical image analysis and diagnostic accuracy improvement.",
     icon: Search,
     technologies: ["Healthcare AI", "Medical Imaging", "Research"],

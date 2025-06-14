@@ -13,7 +13,7 @@ const projects: Project[] = [
     technologies: ["Python", "PyTorch", "3D CNN", "Medical AI"],
     year: "2023",
     category: "AI Research",
-    githubUrl: "https://github.com/jubayerislam17"
+    // githubUrl: "https://github.com/jubayerislam17"
   },
   {
     id: "vegetable-classification",
@@ -23,7 +23,7 @@ const projects: Project[] = [
     technologies: ["Python", "PyTorch", "OpenCV", "CNN"],
     year: "2024",
     category: "Computer Vision",
-    githubUrl: "https://github.com/jubayerislam17"
+    githubUrl: "https://github.com/ir-rafio/Vegetable-Classification-and-Quality-Assessment"
   },
   {
     id: "abaash-rental",
@@ -33,17 +33,17 @@ const projects: Project[] = [
     technologies: ["JavaScript", "Node.js", "HTML/CSS", "MongoDB"],
     year: "2023",
     category: "Web App",
-    githubUrl: "https://github.com/jubayerislam17"
+    githubUrl: "https://github.com/Dcoders-IUT/Abaash"
   },
   {
     id: "aqsa-prayer",
     title: "AQSA - Prayer Time App",
     description: "Location-based prayer time application for Android with accurate timing calculations, customizable notifications, and beautiful Islamic design elements.",
-    image: "https://images.unsplash.com/photo-1564769662538-73b8ad1deb4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: "https://images.unsplash.com/photo-1527838700789-f9b453e73655?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     technologies: ["Flutter", "Dart", "REST API", "GPS"],
     year: "2023",
     category: "Mobile App",
-    githubUrl: "https://github.com/jubayerislam17"
+    githubUrl: "https://github.com/505-NN-505/AQSA"
   }
 ];
 

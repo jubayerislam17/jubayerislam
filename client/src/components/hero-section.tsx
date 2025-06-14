@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown, Download } from "lucide-react";
 import { useTypingAnimation } from "@/hooks/use-typing-animation";
+import meImage from '../attached_assets/me.jpg'; 
 
 const typingTexts = [
   "CSE Graduate & Researcher",
@@ -48,7 +49,7 @@ export function HeroSection() {
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+                src={meImage}
                 alt="MD. JUBAYER ISLAM - Professional Headshot"
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary shadow-xl hover:scale-105 transition-transform duration-300"
               />
@@ -65,8 +66,8 @@ export function HeroSection() {
           </div>
 
           <p className="text-lg md:text-xl max-w-4xl mx-auto mb-12 text-gray-400 leading-relaxed">
-            CSE graduate, CV researcher, and NLP enthusiast. I specialize in building intelligent systems,
-            solving real-world problems, and conducting AI-driven healthcare research.
+            CSE graduate, Associate Software Quality Assurance Engineer, CV researcher, and NLP enthusiast. I specialize in building intelligent systems,
+            solving real-world problems,
           </p>
 
           {/* Role Highlights */}
