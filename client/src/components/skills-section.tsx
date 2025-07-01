@@ -25,7 +25,7 @@ const skillCategories = [
     title: "DevOps & Tools",
     icon: Settings,
     color: "orange",
-    skills: ["Git", "Docker", "Linux", "Heroku", "Vercel"]
+    skills: ["Git", "Docker", "Linux", "Heroku"]
   },
   {
     title: "Concepts & Methodologies",

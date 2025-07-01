@@ -5,8 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 import { Phone, Mail, Github, Send } from "lucide-react";
 import type { ContactFormData } from "@/lib/types";
 
@@ -19,26 +17,6 @@ export function ContactSection() {
   });
   
   const { toast } = useToast();
-
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for your message. I will get back to you soon.",
-      });
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    },
-    onError: (error) => {
-      toast({
-        title: "Failed to send message",
-        description: error.message,
-        variant: "destructive",
-      });
-    },
-  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,7 +40,22 @@ export function ContactSection() {
       return;
     }
 
-    contactMutation.mutate(formData);
+    // Create mailto link
+    const subject = formData.subject || "Portfolio Contact";
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:jubayer.islam.0182@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Show success message
+    toast({
+      title: "Opening email client...",
+      description: "Your default email application will open with the message pre-filled.",
+    });
+    
+    // Clear form
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const handleInputChange = (field: keyof ContactFormData, value: string) => {
@@ -210,9 +203,8 @@ export function ContactSection() {
                 <Button
                   type="submit"
                   className="w-full group"
-                  disabled={contactMutation.isPending}
                 >
-                  <span>{contactMutation.isPending ? "Sending..." : "Send Message"}</span>
+                  <span>Send Message</span>
                   <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
               </form>

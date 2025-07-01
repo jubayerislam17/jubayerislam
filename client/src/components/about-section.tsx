@@ -46,9 +46,9 @@ export function AboutSection() {
                         <Calendar className="h-3 w-3 mr-1" />
                         2019 – 2024
                       </span>
-                      <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">
+                      {/* <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">
                         CGPA: 3.48/4.00
-                      </span>
+                      </span> */}
                     </div>
                   </div>
                 </div>
@@ -65,6 +65,28 @@ export function AboutSection() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-6">
+
+
+
+                  {/* Current working company */}
+                  <div className="relative pl-6 border-l-2 border-secondary/30">
+                    <div className="absolute w-3 h-3 bg-secondary rounded-full -left-2 top-2"></div>
+                    <h4 className="font-medium text-foreground">Software Quality Assurance Engineer</h4>
+                    <p className="text-secondary font-medium">Therap BD</p>
+                    <p className="text-sm text-muted-foreground mb-2 flex items-center">
+                      <Calendar className="h-3 w-3 mr-1" />
+                      Nov 2023 – Present
+                    </p>
+                    <ul className="text-muted-foreground text-sm space-y-1">
+                      <li>• Received extensive training in manual software testing through videos, articles, blogs, and internal training resources.</li>
+                      <li>• Gained domain knowledge to comprehend application functionality, business workflows, and user expectations.</li>
+                      <li>• Learned efficient methods for identifying, reporting, and advocating for bugs.</li>
+                      <li>• Familiarized with in-company protocols for communication, issue reporting and tracking.</li>
+                      <li>• Designed and executed test plans, test cases, and test scenarios to ensure software quality.</li>
+                      <li>• Tracked and reported issues, and followed up on bug-fixing progress.</li>
+                    </ul>
+                  </div>
+                  
                   {/* App Developer Intern */}
                   <div className="relative pl-6 border-l-2 border-primary/30">
                     <div className="absolute w-3 h-3 bg-primary rounded-full -left-2 top-2"></div>
